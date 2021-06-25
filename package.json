@@ -6,7 +6,7 @@
   "author": "baejongyeon <jongbae7978@gmail.com>, vagabondms <hiseokseok@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "tsc && node dist/app.js",
+    "start": "tsc && nodemon dist/app.js",
     "dev": "tsc -w"
   },
   "devDependencies": {
@@ -14,15 +14,17 @@
     "@typescript-eslint/eslint-plugin": "^4.28.0",
     "@typescript-eslint/parser": "^4.28.0",
     "eslint": "^7.29.0",
-    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-prettier": "^3.4.0",
-  
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
     "prettier": "^2.3.1",
     "typescript": "^4.3.4"
   },
   "dependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/morgan": "^1.9.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1"
   }
 }
